@@ -1,5 +1,5 @@
 {
-  "name": "db-migrate",
+  "name": "@pager/db-migrate",
   "description": "Database migration framework for node.js",
   "author": "Tobias Gurtick",
   "bin": "./bin/db-migrate",
@@ -31,7 +31,7 @@
     "programable",
     "api"
   ],
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0",
   "engines": {
     "node": ">=8.0.0"
   },
@@ -74,10 +74,12 @@
     "lab": "^14.3.1",
     "proxyquire": "^1.4.0",
     "rimraf": "^2.6.2",
+    "semantic-release": "^17.0.4",
     "sinon": "^7.2.2"
   },
   "scripts": {
     "pretest": "eslint *.js lib/*.js test/*.js bin/*",
-    "test": "make test-cov"
+    "test": "make test-cov",
+    "semantic-release": "semantic-release"
   }
 }
